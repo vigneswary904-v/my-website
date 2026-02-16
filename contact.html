@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - College Web Project</title>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E7FWT15486"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-E7FWT15486')
+    </script>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #fff8dc;
+        }
+        nav {
+            background-color: #000;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: cyan;
+        }
+        .content {
+            padding: 40px;
+        }
+        .form-box {
+            background: white;
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+            text-align: left;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="login.html">Login</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="content">
+    <h1>Contact Us</h1>
+
+    <div class="form-box">
+        <form onsubmit="alert('Form Submitted Successfully!'); return false;">
+            <label>Name:</label>
+            <input type="text" required>
+
+            <label>Email:</label>
+            <input type="email" required>
+
+            <label>Message:</label>
+            <textarea rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
